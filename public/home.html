@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="header-logo">
+        <div class="header-content">
+            Used Car Checker
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form id="carForm">
+            <div class="input-container">
+                <h4>Sellers Asking Price</h4>
+                <input type="number" id="askingPrice" placeholder="Enter price" required>
+            </div>
+            <div class="input-container">
+                <h4>Perfect Condition Price</h4>
+                <input type="number" id="perfectConditionPrice" placeholder="Cost in perfect condition" required>
+            </div>
+            <div id="repairCost">Total Repair Cost: $0</div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="notification" style="display:none;">
+            This car would cost more to fix than it is worth.
+        </div>
+    </main>
+        
+    <section class="additional-main">
+        <h2>Vehicle Inspection Checklist</h2>
+        <div class="checklist">
+            <div class="category">
+                <h3>Tires</h3>
+                <p>Cost: $525-$725 - <label><input type="checkbox" class="cost-item" data-cost="625"> Add</label></p>
+                <p>Cupping indicates alignment, steering, suspension, or brake issues.</p>
+                <p>Wear only in the middle: over-inflated.</p>
+                <p>Wear only on the edges: under-inflated.</p>
+            </div>
+            <div class="category">
+                <h3>Brakes</h3>
+                <p>Pads Cost: $100-$300 per axle - <label><input type="checkbox" class="cost-item" data-cost="200"> Add</label></p>
+                <p>Rotors Cost: $400-$550 - <label><input type="checkbox" class="cost-item" data-cost="475"> Add</label></p>
+            </div>
+            <div class="category">
+                <h3>Exhaust</h3>
+                <p>Cost: $650 - <label><input type="checkbox" class="cost-item" data-cost="650"> Add</label></p>
+            </div>
+            
+        </div>
+    </section>
+    <script src="home.js"></script>
+</body>
+</html>

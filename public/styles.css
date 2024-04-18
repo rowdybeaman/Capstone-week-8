@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ddd;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+    max-width: 50%;
+    margin: 20px auto; 
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 60%;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+}
+
+header {
+    background-color: #003366;
+    width: 100%;
+    margin: 0;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+#header-logo {
+    width: 70px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+}
+
+.header-content {
+    margin: 10;
+    padding: 10;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    flex-grow: 1; 
+}
+
+header {
+    background-color: #003366;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #004080;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.additional-main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 15px auto 0; 
+    max-width: 60%; 
+}
+
+.category {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.category h3 {
+    color: #003366;
+}
+
+.cost-item {
+    margin-left: 5px;
+}
+
+.donate-button {
+    background-color: #ffbf00;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.input-container {
+    margin: 10px;
+    padding: 10px;
+    border: 3px double #000;
+    display: inline-block; 
+    background-color: #fff;
+}
+
+input[type="number"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #add8e6; 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; 
+}
+
+#notification {
+    color: red;
+    font-weight: bold;
+    text-align: center;  
+    width: 100%;  
+}
